@@ -6,8 +6,7 @@ class QuizQuestionButton extends Component {
         return (
             <li>
                 <button>
-                    {this.props.quiz_question.answer_options[0]}
-
+                    {this.props.button_text}
                 </button>
             </li>
         )
