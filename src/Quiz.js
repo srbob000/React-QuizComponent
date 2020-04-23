@@ -3,19 +3,20 @@ import React, { Component, useState } from 'react'
 let quizData = require('./quiz_data.json')
 
 class Quiz extends Component {
-    constructor() {
-        this.props = useState()
+    constructor(props) {
         super(props)
 
         this.state = { quiz_poistion: 1 }
     }
 
     render() {
-        < div >
-            <div className='QuizQuestion'>
-                {instruction_text = quizData.quiz_poistion}
-            </div>
-        </div >
+        return (
+            < div >
+                <div className='QuizQuestion'>
+                    {quizData.quiz_questions[0].instruction_text}
+                </div>
+            </div >
+        )
     }
 }
 
